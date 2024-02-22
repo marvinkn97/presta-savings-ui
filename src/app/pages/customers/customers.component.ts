@@ -5,8 +5,8 @@ import { Component } from '@angular/core';
   standalone: true,
   imports: [],
   templateUrl: './customers.component.html',
-  styleUrl: './customers.component.css'
+  styleUrl: './customers.component.css',
 })
 export class CustomersComponent {
-
+  email = 'foo@example.com';
 }

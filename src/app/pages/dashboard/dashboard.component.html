@@ -1,100 +1,34 @@
-<div class="container p-2 z-1">
-  <h2 class="display-3 fs-3 fw-bolder text-black-50">Dashboard</h2>
-  <div class="row p-2">
-    <div class="card col-sm-12 col-md-6 col-lg-5 p-3 mt-2 me-5 shadow-sm">
-      <div class="card-header bg-white fs-6">
-        Total Customers <span class="badge bg-secondary fs-6">100</span>
-      </div>
-    </div>
-    <div class="card col-sm-12 col-md-6 col-lg-5 p-3 mt-2 me-5 shadow-sm">
-      <div class="card-header bg-white fs-6">
-        Total Accounts <span class="badge bg-secondary fs-6">100</span>
-      </div>
-    </div>
-    <div class="card col-sm-12 col-md-6 col-lg-5 p-3 mt-2 me-5 shadow-sm">
-      <div class="card-header bg-white fs-6">
-        Total Transactions <span class="badge bg-secondary fs-6">100</span>
-      </div>
-    </div>
-    <div class="card col-sm-12 col-md-6 col-lg-5 p-3 mt-2 me-5 shadow-sm">
-      <div class="card-header bg-white fs-6">
-        Total Accounts Amount <span class="badge bg-secondary fs-6">100</span>
-      </div>
-    </div>
+<div class="card">
+  <div class="card-header">
+    <h2 class="display-3 fs-3 fw-bolder text-black-50">Summary Report</h2>
   </div>
-  <div class="mt-4 card shadow-sm">
-    <div class="card-header">
-      <h4 class="display-6 fs-4">Latest Member Registrations</h4>
+  <div
+    class="card-body bg-body-secondary d-flex align-items-center justify-content-around flex-wrap gap-2"
+  >
+    <div class="card p-3 shadow-sm">
+      <div class="card-header bg-white fs-6">Customers</div>
+      <div class="card-body">
+        <h3 class="badge bg-secondary fs-6">765</h3>
+      </div>
     </div>
-    <div class="card-body">
-      <table class="table table-sm table-hover">
-        <thead class="table-dark">
-          <tr>
-            <th scope="col">Member No</th>
-            <th scope="col">Name</th>
-            <th scope="col">Email</th>
-            <th scope="col">Created Date</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td>MEM54321</td>
-            <td>John Doe</td>
-            <td>{{ email }}</td>
-            <td>2024-02-21</td>
-          </tr>
-        </tbody>
-      </table>
+    <div class="card p-3 shadow-sm">
+      <div class="card-header bg-white fs-6">Accounts</div>
+      <div class="card-body">
+        <h3 class="badge bg-secondary fs-6">1234</h3>
+      </div>
     </div>
-  </div>
-  <div class="mt-4 card shadow-sm">
-    <div class="card-header">
-      <h4 class="display-6 fs-4">Latest Created Accounts</h4>
+    <div class="card p-3 shadow-sm">
+      <div class="card-header bg-white fs-6">Transactions</div>
+      <div class="card-body">
+        <h3 class="badge bg-secondary fs-6">23456</h3>
+      </div>
     </div>
-    <div class="card-body">
-      <table class="table table-sm table-hover table-bordered">
-        <thead class="table-dark">
-          <tr>
-            <th scope="col">Member No</th>
-            <th scope="col">Name</th>
-            <th scope="col">Email</th>
-            <th scope="col">Created Date</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td>MEM54321</td>
-            <td>John Doe</td>
-            <td>{{ email }}</td>
-            <td>2024-02-21</td>
-          </tr>
-        </tbody>
-      </table>
-    </div>
-  </div>
-  <div class="mt-4 card shadow-sm">
-    <div class="card-header">
-      <h4 class="display-6 fs-4">Latest Successful Transactions</h4>
-    </div>
-    <div class="card-body">
-      <table class="table table-sm table-hover table-bordered">
-        <thead class="table-dark">
-          <tr>
-            <th scope="col">Member No</th>
-            <th scope="col">Name</th>
-            <th scope="col">Email</th>
-            <th scope="col">Created Date</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td>MEM54321</td>
-            <td>John Doe</td>
-            <td>{{ email }}</td>
-            <td>2024-02-21</td>
-          </tr>
-        </tbody>
-      </table>
+
+    <div class="card p-3 shadow-sm">
+      <div class="card-header bg-white fs-6">Total Savings</div>
+      <div class="card-body">
+        <h3 class="badge bg-secondary fs-6">234567844.87</h3>
+      </div>
     </div>
   </div>
 </div>
