@@ -4,6 +4,7 @@ import { AccountsComponent } from './pages/accounts/accounts.component';
 import { TransactionsComponent } from './pages/transactions/transactions.component';
 import { DashboardComponent } from './pages/dashboard/dashboard.component';
 import { ErrorComponent } from './pages/error/error.component';
+import { CustomerDetailsComponent } from './pages/customer-details/customer-details.component';
 
 export const routes: Routes = [
   {
@@ -13,6 +14,10 @@ export const routes: Routes = [
   {
     path: 'customers',
     component: CustomersComponent,
+  },
+  {
+    path: 'customers/:id',
+    component: CustomerDetailsComponent,
   },
   {
     path: 'accounts',
