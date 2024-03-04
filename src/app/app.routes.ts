@@ -11,6 +11,10 @@ import { HomeComponent } from './pages/home/home.component';
 
 export const routes: Routes = [
   {
+    path: '',
+    component: LoginComponent,
+  },
+  {
     path: 'register',
     component: RegisterComponent,
   },
@@ -21,27 +25,30 @@ export const routes: Routes = [
   {
     path: 'home',
     component: HomeComponent,
+    children: [
+      {
+        path: 'dashboard',
+        component: DashboardComponent,
+      },
+      {
+        path: 'customers',
+        component: CustomersComponent,
+      },
+      {
+        path: 'customer',
+        component: CustomerDetailsComponent,
+      },
+      {
+        path: 'accounts',
+        component: AccountsComponent,
+      },
+      {
+        path: 'transactions',
+        component: TransactionsComponent,
+      },
+    ],
   },
-  {
-    path: 'dashboard',
-    component: DashboardComponent,
-  },
-  {
-    path: 'customers',
-    component: CustomersComponent,
-  },
-  {
-    path: 'customer',
-    component: CustomerDetailsComponent,
-  },
-  {
-    path: 'accounts',
-    component: AccountsComponent,
-  },
-  {
-    path: 'transactions',
-    component: TransactionsComponent,
-  },
+
   {
     path: '**',
     component: ErrorComponent,
