@@ -9,7 +9,7 @@ import { RouterLink } from '@angular/router';
   styleUrl: './sidebar.component.css',
 })
 export class SidebarComponent {
-  activeItemIndex: number = -1;
+  activeItemIndex: number = 0;
 
   setActive(index: number) {
     this.activeItemIndex = index;

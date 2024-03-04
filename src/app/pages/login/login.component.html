@@ -1,0 +1,47 @@
+<div class="container p-2 z-2 mt-3" style="max-width: 600px; margin: 0 auto">
+  <div class="card">
+    <div class="card-header">
+      <div class="display-6 fs-4 text-center">Login to continue</div>
+    </div>
+    <div class="card-body px-5 py-4">
+      <form action="">
+        <div class="row mt-2">
+          <div class="col-md-12">
+            <label for="emailId" class="form-label">Email</label>
+            <input
+              type="email"
+              class="form-control"
+              placeholder="Enter your email"
+              id="emailId"
+              name="email"
+              required
+            />
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-sm-12 col-md-12">
+            <div class="mt-2">
+              <label for="passId" class="form-label">Password</label>
+              <input
+                type="password"
+                class="form-control"
+                placeholder="Enter your password"
+                id="passId"
+                name="password"
+                required
+              />
+            </div>
+          </div>
+        </div>
+        <div class="row mt-4">
+          <button class="btn btn-success" type="submit">Login</button>
+        </div>
+      </form>
+      <div class="row">
+        <button class="btn btn-sm btn-light" (click)="goToRegisterPage()">
+          Go to register page
+        </button>
+      </div>
+    </div>
+  </div>
+</div>

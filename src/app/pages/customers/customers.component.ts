@@ -1,11 +1,12 @@
 import { Component, OnInit, inject } from '@angular/core';
 import { Customer } from '../../models/Customer';
 import { CustomerService } from '../../services/customer.service';
+import { RouterLink } from '@angular/router';
 
 @Component({
   selector: 'app-customers',
   standalone: true,
-  imports: [],
+  imports: [RouterLink],
   templateUrl: './customers.component.html',
   styleUrl: './customers.component.css',
 })

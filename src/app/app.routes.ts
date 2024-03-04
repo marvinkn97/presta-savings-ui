@@ -5,8 +5,23 @@ import { TransactionsComponent } from './pages/transactions/transactions.compone
 import { DashboardComponent } from './pages/dashboard/dashboard.component';
 import { ErrorComponent } from './pages/error/error.component';
 import { CustomerDetailsComponent } from './pages/customer-details/customer-details.component';
+import { RegisterComponent } from './pages/register/register.component';
+import { LoginComponent } from './pages/login/login.component';
+import { HomeComponent } from './pages/home/home.component';
 
 export const routes: Routes = [
+  {
+    path: 'register',
+    component: RegisterComponent,
+  },
+  {
+    path: 'login',
+    component: LoginComponent,
+  },
+  {
+    path: 'home',
+    component: HomeComponent,
+  },
   {
     path: 'dashboard',
     component: DashboardComponent,
@@ -16,7 +31,7 @@ export const routes: Routes = [
     component: CustomersComponent,
   },
   {
-    path: 'customers/:id',
+    path: 'customer',
     component: CustomerDetailsComponent,
   },
   {

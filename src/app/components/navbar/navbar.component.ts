@@ -1,5 +1,5 @@
-import { Component } from '@angular/core';
-import { RouterLink } from '@angular/router';
+import { Component, inject } from '@angular/core';
+import { RouterLink, Router } from '@angular/router';
 
 @Component({
   selector: 'app-navbar',
@@ -10,4 +10,9 @@ import { RouterLink } from '@angular/router';
 })
 export class NavbarComponent {
   name = 'Marvin Nyingi';
+  router = inject(Router);
+
+  logout() {
+    this.router.navigateByUrl('/register', { skipLocationChange: true });
+  }
 }

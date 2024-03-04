@@ -5,6 +5,15 @@
     <a class="navbar-brand" href="#" routerLink="/dashboard"
       >PRESTA SAVINGS APP</a
     >
-    <div class="me-2">{{ name }}</div>
+    <div class="d-flex gap-4 me-2">
+      {{ name }}
+      <button
+        href="#"
+        class="btn btn-sm btn-outline-primary"
+        (click)="logout()"
+      >
+        Logout
+      </button>
+    </div>
   </div>
 </nav>
