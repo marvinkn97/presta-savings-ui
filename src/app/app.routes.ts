@@ -25,7 +25,7 @@ export const routes: Routes = [
   {
     path: 'home',
     component: HomeComponent,
-    children: [
+    loadChildren: () => [
       {
         path: 'dashboard',
         component: DashboardComponent,
@@ -48,7 +48,6 @@ export const routes: Routes = [
       },
     ],
   },
-
   {
     path: '**',
     component: ErrorComponent,

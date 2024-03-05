@@ -4,7 +4,11 @@
       <div class="display-6 fs-4 text-center">Member Registration</div>
     </div>
     <div class="card-body px-5 py-4">
-      <form action="">
+      <form
+        method="post"
+        [formGroup]="registerForm"
+        (ngSubmit)="registerCustomer()"
+      >
         <div class="row mt-2">
           <div class="col-md-12">
             <label for="nameId" class="form-label">Full Name</label>
@@ -15,6 +19,7 @@
               id="nameId"
               name="name"
               required
+              formControlName="name"
             />
           </div>
         </div>
@@ -28,6 +33,7 @@
               id="emailId"
               name="email"
               required
+              formControlName="email"
             />
           </div>
         </div>
@@ -42,6 +48,7 @@
                 id="passId"
                 name="password"
                 required
+                formControlName="password"
               />
             </div>
           </div>

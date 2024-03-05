@@ -2,6 +2,7 @@ import { HttpClient } from '@angular/common/http';
 import { Injectable, inject } from '@angular/core';
 import { Customer } from '../models/Customer';
 import { Observable } from 'rxjs';
+import { CustomerRegistrationRequest } from '../dtos/CustomerRegistrationRequest';
 
 @Injectable({
   providedIn: 'root',
@@ -11,6 +12,10 @@ export class CustomerService {
   private http = inject(HttpClient);
 
   constructor() {}
+
+  registerCustomer(registrationRequest: CustomerRegistrationRequest) {
+    console.log(JSON.stringify(registrationRequest));
+  }
 
   getAllCustomers(): Observable<Customer[]> {
     return this.http.get<Customer[]>(this.BASE_URL + '/all');

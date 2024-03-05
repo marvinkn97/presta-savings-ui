@@ -13,6 +13,6 @@ export class NavbarComponent {
   router = inject(Router);
 
   logout() {
-    this.router.navigateByUrl('/register', { skipLocationChange: true });
+    this.router.navigateByUrl('/login');
   }
 }
