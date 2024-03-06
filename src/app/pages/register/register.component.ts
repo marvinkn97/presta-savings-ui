@@ -41,7 +41,16 @@ export class RegisterComponent {
 
     console.log(registrationRequest);
 
-    this.customerService.registerCustomer(registrationRequest);
+    this.customerService.registerCustomer(registrationRequest).subscribe(
+      (response) => {
+        console.log('Registration successful:', response);
+        // Handle success response from backend
+      },
+      (error) => {
+        console.error('Registration error:', error);
+        // Handle error response from backend
+      }
+    );
   }
 
   //navigate to login page

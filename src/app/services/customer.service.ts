@@ -13,8 +13,14 @@ export class CustomerService {
 
   constructor() {}
 
-  registerCustomer(registrationRequest: CustomerRegistrationRequest) {
+  registerCustomer(
+    registrationRequest: CustomerRegistrationRequest
+  ): Observable<string> {
     console.log(JSON.stringify(registrationRequest));
+    return this.http.post<string>(
+      `${this.BASE_URL}/register`,
+      registrationRequest
+    );
   }
 
   getAllCustomers(): Observable<Customer[]> {

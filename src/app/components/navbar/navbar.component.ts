@@ -11,6 +11,7 @@ import { RouterLink, Router } from '@angular/router';
 export class NavbarComponent {
   name = 'Marvin Nyingi';
   router = inject(Router);
+  isLoggedIn: boolean = false;
 
   logout() {
     this.router.navigateByUrl('/login');
