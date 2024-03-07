@@ -2,44 +2,32 @@
   <a
     href="#"
     class="list-group-item list-group-item-action"
-    [class.active]="activeItemIndex === 0"
-    (click)="setActive(0)"
-    routerLink="/dashboard"
-  >
-    Dashboard
-  </a>
-  <a
-    href="#"
-    class="list-group-item list-group-item-action"
-    [class.active]="activeItemIndex === 1"
-    (click)="setActive(1)"
-    routerLink="/customers"
+    routerLink="/home/customers"
+    routerLinkActive="active"
   >
     Customers
   </a>
   <a
     href="#"
     class="list-group-item list-group-item-action"
-    [class.active]="activeItemIndex === 2"
-    (click)="setActive(2)"
-    routerLink="/accounts"
+    routerLink="/home/accounts"
+    routerLinkActive="active"
   >
     Accounts
   </a>
   <a
     href="#"
     class="list-group-item list-group-item-action"
-    [class.active]="activeItemIndex === 3"
-    (click)="setActive(3)"
-    routerLink="/transactions"
+    routerLink="/home/transactions"
+    routerLinkActive="active"
   >
     Transactions
   </a>
   <a
     href="#"
     class="list-group-item list-group-item-action"
-    [class.active]="activeItemIndex === 4"
-    (click)="setActive(4)"
+    routerLink="/home/profile"
+    routerLinkActive="active"
   >
     Profile
   </a>

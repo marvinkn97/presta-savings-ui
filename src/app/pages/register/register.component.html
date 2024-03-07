@@ -1,4 +1,6 @@
 <div class="container p-2 z-2 mt-3" style="max-width: 600px; margin: 0 auto">
+  <div class="alert alert-success">Member Registered Successfully</div>
+  <div class="alert alert-danger">Error occured</div>
   <div class="card">
     <div class="card-header">
       <div class="display-6 fs-4 text-center">Member Registration</div>
@@ -21,6 +23,7 @@
               required
               formControlName="name"
             />
+            <div class="alert alert-danger">Name is required</div>
           </div>
         </div>
         <div class="row mt-2">
@@ -35,6 +38,7 @@
               required
               formControlName="email"
             />
+            <div class="alert alert-danger">Email is required</div>
           </div>
         </div>
         <div class="row">
@@ -50,6 +54,7 @@
                 required
                 formControlName="password"
               />
+              <div class="alert alert-danger">Password is required</div>
             </div>
           </div>
           <div class="col-sm-12 col-md-6">
@@ -62,6 +67,7 @@
                 id="cpassId"
                 required
               />
+              <div class="alert alert-danger">Confirm Password</div>
             </div>
           </div>
         </div>

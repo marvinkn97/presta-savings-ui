@@ -26,6 +26,7 @@ export class CustomersComponent implements OnInit {
         // Handle the received data here
       },
       (error) => {
+        this.loading = false;
         console.error('Error fetching customers:', error);
         // Handle error here
       }

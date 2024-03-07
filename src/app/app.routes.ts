@@ -8,6 +8,7 @@ import { CustomerDetailsComponent } from './pages/customer-details/customer-deta
 import { RegisterComponent } from './pages/register/register.component';
 import { LoginComponent } from './pages/login/login.component';
 import { HomeComponent } from './pages/home/home.component';
+import { ProfileComponent } from './pages/profile/profile.component';
 
 export const routes: Routes = [
   {
@@ -27,7 +28,7 @@ export const routes: Routes = [
     component: HomeComponent,
     loadChildren: () => [
       {
-        path: 'dashboard',
+        path: '',
         component: DashboardComponent,
       },
       {
@@ -35,7 +36,7 @@ export const routes: Routes = [
         component: CustomersComponent,
       },
       {
-        path: 'customer',
+        path: 'customers/:memberNumber',
         component: CustomerDetailsComponent,
       },
       {
@@ -45,6 +46,10 @@ export const routes: Routes = [
       {
         path: 'transactions',
         component: TransactionsComponent,
+      },
+      {
+        path: 'profile',
+        component: ProfileComponent,
       },
     ],
   },
