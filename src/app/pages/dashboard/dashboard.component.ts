@@ -1,6 +1,6 @@
 import { Component, OnInit, inject } from '@angular/core';
 import { CustomerService } from '../../services/customer.service';
-import { Customer } from '../../models/Customer';
+import { Customer } from '../../models/customer.model';
 
 @Component({
   selector: 'app-dashboard',

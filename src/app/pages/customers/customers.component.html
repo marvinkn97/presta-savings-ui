@@ -10,6 +10,7 @@
             type="text"
             class="form-control"
             placeholder="Search Customer"
+            [disabled]="customers.length <= 0"
           />
         </div>
       </form>
