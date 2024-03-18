@@ -1,0 +1,5 @@
+/* Override Bootstrap pagination focus style */
+.page-link:focus {
+  outline: none; /* Remove outline */
+  box-shadow: none; /* Remove box shadow */
+}

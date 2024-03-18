@@ -7,7 +7,7 @@ import {
 } from '@angular/forms';
 import { Router } from '@angular/router';
 import { CustomerService } from '../../services/customer.service';
-import { CustomerRegistrationRequest } from '../../dtos/CustomerRegistrationRequest';
+import { RegistrationRequest } from '../../dtos/RegistrationRequest';
 
 @Component({
   selector: 'app-register',
@@ -33,7 +33,7 @@ export class RegisterComponent {
       return;
     }
 
-    let registrationRequest: CustomerRegistrationRequest = {
+    let registrationRequest: RegistrationRequest = {
       name: this.registerForm.value.name as string,
       email: this.registerForm.value.email as string,
       password: this.registerForm.value.password as string,

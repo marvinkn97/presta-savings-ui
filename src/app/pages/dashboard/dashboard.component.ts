@@ -1,6 +1,6 @@
 import { Component, OnInit, inject } from '@angular/core';
 import { CustomerService } from '../../services/customer.service';
-import { Customer } from '../../models/customer.model';
+import { Customer } from '../../models/customer';
 
 @Component({
   selector: 'app-dashboard',
@@ -10,7 +10,6 @@ import { Customer } from '../../models/customer.model';
   styleUrl: './dashboard.component.css',
 })
 export class DashboardComponent implements OnInit {
-  email = 'johndoe@example.com';
   customers: Customer[] = [];
 
   private customerService = inject(CustomerService);

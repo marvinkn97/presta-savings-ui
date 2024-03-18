@@ -19,6 +19,4 @@ import { HomeComponent } from './pages/home/home.component';
   templateUrl: './app.component.html',
   styleUrl: './app.component.css',
 })
-export class AppComponent {
-  title = 'presta-savings-ui';
-}
+export class AppComponent {}
