@@ -22,6 +22,10 @@ export class LoginComponent {
     password: new FormControl('', Validators.required),
   });
 
+  google() {
+    alert('to be implemented😀');
+  }
+
   goToRegisterPage() {
     this.router.navigateByUrl('/register');
   }

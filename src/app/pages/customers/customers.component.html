@@ -59,11 +59,7 @@
         <div class="pagination">
           @for (page of pageList; track $index) {
           <div class="page-item">
-            <button
-              class="page-link"
-              (click)="onPageChange(page)"
-              [ngClass]="{ active: currentPage === page }"
-            >
+            <button class="page-link" (click)="onPageChange(page)">
               {{ page }}
             </button>
           </div>
